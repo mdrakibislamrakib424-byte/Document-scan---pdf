@@ -136,7 +136,7 @@ object RetypesetRenderer {
             isAntiAlias = true
             color = style.textColor
             alpha = 90
-            style = Paint.Style.STROKE
+            this.style = Paint.Style.STROKE
             strokeWidth = (1f * density).coerceAtLeast(1f)
         }
 
