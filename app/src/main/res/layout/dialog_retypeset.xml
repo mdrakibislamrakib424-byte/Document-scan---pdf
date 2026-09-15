@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/etRetypesetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Document name (optional)"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Style" />
+
+    <RadioGroup
+        android:id="@+id/radioRetypesetStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioStylePlain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Plain — compact, minimal margins" />
+
+        <RadioButton
+            android:id="@+id/radioStyleBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book — warm page, generous spacing" />
+
+        <RadioButton
+            android:id="@+id/radioStyleNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes — large text, extra line spacing" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkEnglishOnly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="This document is fully English (more accurate)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:text="Re-typesets your scan into a clean new document. Detects titles, paragraphs, tables (as real rows and columns), and images automatically, and adds page numbers plus any repeated header/footer. Merged table cells and photos of handwriting/math are not fully reproduced." />
+
+</LinearLayout>

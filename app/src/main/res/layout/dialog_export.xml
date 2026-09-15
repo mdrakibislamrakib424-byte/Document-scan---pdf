@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/etDocumentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Document name (optional)"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Quality" />
+
+    <RadioGroup
+        android:id="@+id/radioQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Standard (full quality, larger file)" />
+
+        <RadioButton
+            android:id="@+id/radioCompressed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compressed (smaller file, for easy sharing)" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkOcr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Make searchable (OCR — Bangla + English)" />
+
+    <CheckBox
+        android:id="@+id/checkEnglishOnly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="24dp"
+        android:text="This document is fully English (more accurate)" />
+
+</LinearLayout>

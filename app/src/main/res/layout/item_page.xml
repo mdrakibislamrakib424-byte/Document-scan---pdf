@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/ivDragHandle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_drag_handle"
+        android:contentDescription="Drag to reorder" />
+
+    <ImageView
+        android:id="@+id/ivThumbnail"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:background="#DDDDDD" />
+
+    <TextView
+        android:id="@+id/tvPageNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:textSize="16sp"
+        android:text="Page 1" />
+
+    <ImageButton
+        android:id="@+id/btnRotate"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_rotate"
+        android:contentDescription="Rotate page" />
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Delete page" />
+
+</LinearLayout>
